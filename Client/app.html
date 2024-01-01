@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="background-container"></div>
+  <div class="content-container">
+    <div class="prompts">
+      <label id="first-label" for="sqft">Area in Square Footage</label>
+      <div id="sqft">
+        <input type="text" id="sqft-input" />
+    </div>
+      <label id="second-label" for="bhk">BHK</label>
+      <div id="bhk">
+        <input type="radio" name="bhkchoice" id="first-bhk" />
+        <label for="first-bhk">1</label>
+        <input type="radio" name="bhkchoice" id="second-bhk" />
+        <label for="second-bhk">2</label>
+        <input type="radio" name="bhkchoice" id="third-bhk" />
+        <label for="third-bhk">3</label>
+        <input type="radio" name="bhkchoice" id="fourth-bhk" />
+        <label for="fourth-bhk">4</label>
+        <input type="radio" name="bhkchoice" id="fifth-bhk" />
+        <label for="fifth-bhk">5</label>
+      </div>
+      <label id="third-label" for="bath">Bath</label>
+      <div id="bath">
+        <input type="radio" name="bathchoice" id="first-bath" />
+        <label for="first-bath">1</label>
+        <input type="radio" name="bathchoice" id="second-bath" />
+        <label for="second-bath">2</label>
+        <input type="radio" name="bathchoice" id="third-bath" />
+        <label for="third-bath">3</label>
+        <input type="radio" name="bathchoice" id="fourth-bath" />
+        <label for="fourth-bath">4</label>
+        <input type="radio" name="bathchoice" id="fifth-bath" />
+        <label for="fifth-bath">5</label>
+      </div>
+      <label id="fourth-label" for="sqft">Location</label>
+      <div class="location-box">
+        <select class="location" name="" id="uiLocations">
+          <option value="" disabled="disabled" selected="selected">
+            Choose a location
+          </option>
+          <option>Laith</option>
+          <option>Masri</option>
+        </select>
+      </div>
+      <button class="submit" onclick="predictPrice()" type="button">Check These Prices!</button>
+      <div id="estimatedPrice"></div>
+    </div>
+  </body>
+</html>
